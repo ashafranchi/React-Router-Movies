@@ -9,11 +9,13 @@ const App = () => {
 
   const addToSavedList = movie => {
     setSavedList( [...savedList, movie] );
+    console.log(movie);
   };
   return (
     <div>
       <Route exact path= "/" component = {MovieList}/>
       <Route exact path= "/Movies/:id" component = {Movie}/>
+
     </div>
   );
 }
